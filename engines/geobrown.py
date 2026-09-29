@@ -15,7 +15,7 @@ dt = 1
 df = 4.0
 def _gen_ret():
   return numpy.exp(
-      (mu - (std**2) / 2) * dt + std * numpy.sqrt(dt) * numpy.random.standard_normal(df=df)
+      (mu - (std**2) / 2) * dt + std * numpy.sqrt(dt) * numpy.random.standard_normal()
   )
 def run_simulation(n=1000, base=10):
   ly = [base]
